@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: tubevit
+Version: 0.1.0
+Summary: An unofficial implementation of TubeViT in "Rethinking Video ViTs: Sparse Video Tubes for Joint Image and Video Learning".
+Author: Su YR
+License: MIT
+License-File: LICENSE
