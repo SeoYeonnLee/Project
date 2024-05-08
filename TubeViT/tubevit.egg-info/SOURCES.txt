@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tubevit/__init__.py
+tubevit/dataset.py
+tubevit/model.py
+tubevit/positional_encoding.py
+tubevit.egg-info/PKG-INFO
+tubevit.egg-info/SOURCES.txt
+tubevit.egg-info/dependency_links.txt
+tubevit.egg-info/top_level.txt
