@@ -37,7 +37,7 @@
 -> OC_SORT 모델 학습에 사용
 
 - **AI Hub 실내(편의점, 매장) 사람 이상행동 데이터 & AI Hub 실내(편의점, 매장) 사람 구매행동 데이터**
-  <img src="https://github.com/SeoYeonnLee/Project/assets/105186555/a002fc4b-2618-46dc-94e3-f5bc84448a0e.png" width="700" height="200"/>
+  <img src="https://github.com/SeoYeonnLee/Project/assets/105186555/37cfc731-4a11-4115-947f-6c6775f6d8d4.png" width="650" height="200"/>
   - 해당 데이터 중 이상행동 3가지(흡연, 파손, 폭행), 정상행동 2가지(매장 이동, 구매) 총 5개의 class로 구성
 -> TubeViT 모델 학습에 사용
 <br>
@@ -45,7 +45,7 @@
 ### 4.3. Data Preprocessing
 - MOT 데이터셋 -> COCO 데이터셋 format에 맞게 변환
 - 사람의 행동에 집중하고자 Obejct Tracking을 통해 객체를 Crop하여 영상 추출
-  <img src="https://github.com/SeoYeonnLee/Project/assets/105186555/85c341e1-0d88-4938-8724-026a0d2213ec.png" width="700" height="200"/>
+  <img src="https://github.com/SeoYeonnLee/Project/assets/105186555/384e476b-3020-4d91-befb-ade30aca85eb.png" width="700" height="200"/>
 - 모델의 입력과 맞춰주기 위해 영상 frame 수를 32 frame으로 고정
 - 비디오 파일명과 label이 담긴 .txt 파일 생성하여 학습 데이터 형태로 변환
 <br>
