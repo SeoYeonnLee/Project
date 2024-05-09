@@ -19,12 +19,16 @@
 <br>
 
 ## 4. Process
+
+### 4.1. Model Flow
+<img src="https://github.com/SeoYeonnLee/Project/assets/105186555/ac67d5a6-b620-4b39-9870-407f79225f73.png" width="850" height="300"/>
+
 1. CCTV가 매장 내의 영상을 실시간으로 촬영
 2. OC-SORT 모델을 활용해 매장 내 존재하는 사람들의 경로 및 모습을 Tracking
 3. Tracking과 동시에 5초 단위로 Action Recognition 모델인 TubeViT를 활용해 어떤 행동을 하고 있는지 탐지
 <br>
 
-### 4.1. Dataset
+### 4.2. Dataset
 - **MOT17**
   - Multi Object Tracking을 위한 Dataset
   - 보행자를 추적하는 데 사용<br>
@@ -33,8 +37,9 @@
 - **AI Hub 실내(편의점, 매장) 사람 이상행동 데이터 & AI Hub 실내(편의점, 매장) 사람 구매행동 데이터**
   - 해당 데이터 중 이상행동 3가지(흡연, 파손, 폭행), 정상행동 2가지(매장 이동, 구매) 총 5개의 class로 구성
 -> TubeViT 모델 학습에 사용
+<br>
 
-### 4.2. Data Preprocessing
+### 4.3. Data Preprocessing
 - MOT 데이터셋 -> COCO 데이터셋 format에 맞게 변환
 - 사람의 행동에 집중하고자 Obejct Tracking을 통해 객체를 Crop하여 영상 추출
 - 모델의 입력과 맞춰주기 위해 영상 frame 수를 32 frame으로 고정
